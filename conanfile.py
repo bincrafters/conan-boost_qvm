@@ -3,8 +3,8 @@ from conans import ConanFile, tools, os
 class BoostQvmConan(ConanFile):
     name = "Boost.Qvm"
     version = "1.64.0"
-    generators = "txt"
-    url = "https://github.com/boostorg/qvm"
+    url = "https://github.com/bincrafters/conan-boost-qvm"
+    source_url = "https://github.com/boostorg/qvm"
     description = "Please visit http://www.boost.org/doc/libs/1_64_0/libs/libraries.htm"
     license = "www.boost.org/users/license.html"
     lib_short_name = "qvm"
@@ -18,7 +18,7 @@ class BoostQvmConan(ConanFile):
 
     def source(self):
         self.run("git clone --depth=50 --branch=boost-{0} {1}.git"
-                 .format(self.version, self.url))
+                 .format(self.version, self.source_url))
 
     def package(self):
         include_dir = os.path.join(self.build_folder, self.lib_short_name, "include")
