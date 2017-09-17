@@ -2,17 +2,17 @@ from conans import ConanFile, tools, os
 
 class BoostQvmConan(ConanFile):
     name = "Boost.Qvm"
-    version = "1.64.0"
+    version = "1.65.1"
     short_paths = True
     url = "https://github.com/bincrafters/conan-boost-qvm"
-    description = "Please visit http://www.boost.org/doc/libs/1_64_0/libs/libraries.htm"
+    description = "Please visit http://www.boost.org/doc/libs/1_65_1/libs/libraries.htm"
     license = "www.boost.org/users/license.html"
     lib_short_names = ["qvm"]
-    requires =  "Boost.Assert/1.64.0@bincrafters/testing", \
-                      "Boost.Core/1.64.0@bincrafters/testing", \
-                      "Boost.Exception/1.64.0@bincrafters/testing", \
-                      "Boost.Static_Assert/1.64.0@bincrafters/testing", \
-                      "Boost.Throw_Exception/1.64.0@bincrafters/testing"
+    requires =  "Boost.Assert/1.65.1@bincrafters/testing", \
+                      "Boost.Core/1.65.1@bincrafters/testing", \
+                      "Boost.Exception/1.65.1@bincrafters/testing", \
+                      "Boost.Static_Assert/1.65.1@bincrafters/testing", \
+                      "Boost.Throw_Exception/1.65.1@bincrafters/testing"
 
                       #assert1 core2 exception5 static_assert1 throw_exception2
 
