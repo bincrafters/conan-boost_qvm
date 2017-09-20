@@ -8,11 +8,11 @@ class BoostQvmConan(ConanFile):
     description = "Please visit http://www.boost.org/doc/libs/1_65_1/libs/libraries.htm"
     license = "www.boost.org/users/license.html"
     lib_short_names = ["qvm"]
-    requires =  "Boost.Assert/1.65.1@bincrafters/stable", \
-                      "Boost.Core/1.65.1@bincrafters/stable", \
-                      "Boost.Exception/1.65.1@bincrafters/stable", \
-                      "Boost.Static_Assert/1.65.1@bincrafters/stable", \
-                      "Boost.Throw_Exception/1.65.1@bincrafters/stable"
+    requires =  "Boost.Assert/1.65.1@bincrafters/testing", \
+                      "Boost.Core/1.65.1@bincrafters/testing", \
+                      "Boost.Exception/1.65.1@bincrafters/testing", \
+                      "Boost.Static_Assert/1.65.1@bincrafters/testing", \
+                      "Boost.Throw_Exception/1.65.1@bincrafters/testing"
 
                       #assert1 core2 exception5 static_assert1 throw_exception2
 
