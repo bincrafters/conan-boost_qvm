@@ -7,7 +7,7 @@ from conans import ConanFile, tools
 class BoostQvmConan(ConanFile):
     name = "boost_qvm"
     version = "1.66.0"
-    url = "https://github.com/bincrafters/conan-boost-qvm"
+    url = "https://github.com/bincrafters/conan-boost_qvm"
 
     lib_short_names = ["qvm"]
     is_header_only = True
