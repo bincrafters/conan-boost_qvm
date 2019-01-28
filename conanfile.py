@@ -8,6 +8,7 @@ base = python_requires("boost_base/1.68.0@bincrafters/stable")
 
 class BoostQvmConan(base.BoostBaseConan):
     name = "boost_qvm"
+    version = "1.68.0"
     url = "https://github.com/bincrafters/conan-boost_qvm"
     lib_short_names = ["qvm"]
     header_only_libs = ["qvm"]
